@@ -10,9 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="personal-logo.png" type="image/png">
+  <link rel="preload" href="tidebound-greenhouse.png" as="image" fetchpriority="high">
   <link rel="preload" href="black-ops-one.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <noscript><style>.progressive-image{opacity:1!important}</style></noscript>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -26,7 +28,7 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-art" role="img" aria-label="RIGHTEOUS protagonist overlooking a Swat Valley landscape"></div>
+      <div class="hero-art"><img class="progressive-image" src="tidebound-greenhouse.png" alt="RIGHTEOUS protagonist overlooking a Swat Valley landscape" fetchpriority="high"></div>
       <div class="hero-shade"></div>
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-dot"></span> GAME DEVELOPER</p>
@@ -40,7 +42,7 @@
     <section class="featured section-wrap righteous-section" id="work" aria-labelledby="featured-title">
       <div class="righteous-frame">
         <div class="righteous-scene">
-          <img src="tidebound-greenhouse.png" alt="RIGHTEOUS protagonist holding an AK-47 in the mountains of Swat Valley" loading="lazy">
+          <img class="progressive-image" src="tidebound-greenhouse.png" alt="RIGHTEOUS protagonist holding an AK-47 in the mountains of Swat Valley" loading="lazy">
           <div class="scene-vignette"></div>
           <img class="scene-insignia" src="righteous-logo.jpg" alt="RIGHTEOUS game logo" loading="lazy">
         </div>
@@ -55,7 +57,7 @@
 
 
     <section class="about section-wrap" id="about" aria-labelledby="about-title">
-      <figure class="about-portrait"><img src="muhammad-tayyab.jpg" alt="Portrait of Muhammad Tayyab" loading="lazy"></figure>
+      <figure class="about-portrait"><img class="progressive-image" src="muhammad-tayyab.jpg" alt="Portrait of Muhammad Tayyab" loading="lazy"></figure>
       <div class="about-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2 id="about-title">Proud of who I am.<br><em>Doing what I love.</em></h2></div>
       <div class="about-body"><p>I'm Tayyab, follower of Prophet Muhammad <span lang="ar" dir="rtl">ﷺ</span>, proud Pakistani, deeply connected to my Punjabi heritage, supporter of Pakistan Army, interested in history and military, love playing games a lot and creating them.</p><div class="tool-list"><span>MY TOOLKIT</span><p>Unity <i>·</i> C#</p></div><button class="text-link resume-open" type="button" aria-controls="resume-dialog" aria-expanded="false">Resume <span class="resume-mark" aria-hidden="true">+</span></button></div>
     </section>
