@@ -1,11 +1,6 @@
 const projects={
   righteous:{title:'RIGHTEOUS',summary:'A story-driven mobile FPS set in Pakistan.',role:'Muhammad Tayyab — Developer and Designer.',tools:'Unity · C#',story:'Development challenges included building 3D models without prior experience and adapting games designed for PC keyboard-and-mouse input to mobile devices and touch controls.',tags:['ANDROID','2026','100% COMPLETE','READY TO SHIP']}
 };
-document.querySelectorAll('.progressive-image').forEach(image=>{
-  const reveal=()=>image.classList.add('is-loaded');
-  if(image.complete&&image.naturalWidth)reveal();
-  else image.addEventListener('load',reveal,{once:true});
-});
 const dialog=document.querySelector('.case-dialog');
 document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{
   const project=projects[button.dataset.project];
